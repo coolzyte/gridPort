@@ -1,0 +1,142 @@
+/* googel font Open Sans & Raleway */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800|Raleway:300,400,500,600,700,800,900');
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-color;
+  font-size: 1.6rem;
+  line-height: 1.25em;
+}
+
+.wrapper {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  color: $secondary-color;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+a,
+button,
+a:before,
+img,
+input,
+textarea {
+  transition: all 300ms ease-in 0s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.box-layout {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 9rem;
+}
+
+.form-check-input {
+  margin-left: 0;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+  margin-left: 1.25rem;
+  padding-left: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+input,
+select {
+  font-size: 14px;
+}
+
+canvas {
+  vertical-align: middle;
+}
+
+option {
+  background: #ffffff none repeat scroll 0 0;
+  padding: 5px 0 5px 10px;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+button:focus,
+select:focus {
+  outline: none;
+}
+
+button.close {
+  cursor: pointer;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.full-img {
+  width: 100%;
+}
+
+.menu-hidden {
+  display: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+  outline: 0 none;
+  text-decoration: none
+}
+
+h4 a:hover {
+  color: #3498db;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0
+}
