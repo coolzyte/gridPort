@@ -1,8 +1,7 @@
 .slider {
   position: relative;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   margin-top: 14.2rem;
   @include large {
     margin-top: 12.4rem;
@@ -17,17 +16,30 @@
     }
   }
   &__text {
+    text-align: center;
+    @include medium {
+      text-align: left;
+    }
     h1 {
       display: inline-block;
       font-size: 9rem;
       font-weight: 900;
       line-height: 8.5rem;
       margin-bottom: 1.5rem;
+      @include respond(tab-land) {
+        font-size: 4rem;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+      }
     }
     h2 {
       font-size: 3.4rem;
       font-weight: 300;
       line-height: 3.4rem;
+      @include respond(tab-land) {
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
     }
   }
   h5 {
@@ -36,6 +48,9 @@
     letter-spacing: 0.6rem;
     margin-bottom: 1rem;
     word-spacing: 0.5rem;
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
   }
   .btn {
     background: transparent none repeat scroll 0 0;
@@ -54,7 +69,10 @@
     }
   }
   &__social {
-    margin-bottom: -42rem;
+    margin-bottom: -10rem;
+    @include medium {
+      margin-bottom: -42rem;
+    }
     @include large {
       position: absolute;
       right: -184px;

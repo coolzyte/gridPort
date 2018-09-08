@@ -185,15 +185,22 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
-  .flex-item--sb {
-    justify-content: space-between; }
+  @media only screen and (min-width: 800px) {
+    .flex-item--sb {
+      justify-content: space-between; } }
 
 .social-menu li a {
-  margin-bottom: 0;
   margin-left: 15px;
+  margin-bottom: 0;
   color: #989898; }
   .social-menu li a:hover {
     color: #0f151d; }
+
+.d-none {
+  display: none; }
+  @media only screen and (min-width: 800px) {
+    .d-none {
+      display: block; } }
 
 .header {
   grid-column: full-start / full-end;
@@ -230,9 +237,8 @@ ul {
 
 .slider {
   position: relative;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   margin-top: 14.2rem; }
   @media only screen and (min-width: 1300px) {
     .slider {
@@ -244,22 +250,39 @@ ul {
     @media only screen and (min-width: 1300px) {
       .slider__image {
         max-width: 100%; } }
-  .slider__text h1 {
-    display: inline-block;
-    font-size: 9rem;
-    font-weight: 900;
-    line-height: 8.5rem;
-    margin-bottom: 1.5rem; }
-  .slider__text h2 {
-    font-size: 3.4rem;
-    font-weight: 300;
-    line-height: 3.4rem; }
+  .slider__text {
+    text-align: center; }
+    @media only screen and (min-width: 800px) {
+      .slider__text {
+        text-align: left; } }
+    .slider__text h1 {
+      display: inline-block;
+      font-size: 9rem;
+      font-weight: 900;
+      line-height: 8.5rem;
+      margin-bottom: 1.5rem; }
+      @media only screen and (max-width: 75em) {
+        .slider__text h1 {
+          font-size: 4rem;
+          line-height: 3.5rem;
+          margin-bottom: 1rem; } }
+    .slider__text h2 {
+      font-size: 3.4rem;
+      font-weight: 300;
+      line-height: 3.4rem; }
+      @media only screen and (max-width: 75em) {
+        .slider__text h2 {
+          font-size: 1.8rem;
+          line-height: 2rem; } }
   .slider h5 {
     font-size: 2.8rem;
     font-weight: 400;
     letter-spacing: 0.6rem;
     margin-bottom: 1rem;
     word-spacing: 0.5rem; }
+    @media only screen and (max-width: 75em) {
+      .slider h5 {
+        font-size: 2rem; } }
   .slider .btn {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #303030;
@@ -275,7 +298,10 @@ ul {
       background: #303030;
       color: #fff; }
   .slider__social {
-    margin-bottom: -42rem; }
+    margin-bottom: -10rem; }
+    @media only screen and (min-width: 800px) {
+      .slider__social {
+        margin-bottom: -42rem; } }
     @media only screen and (min-width: 1300px) {
       .slider__social {
         position: absolute;

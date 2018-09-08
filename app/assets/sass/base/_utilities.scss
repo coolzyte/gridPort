@@ -51,17 +51,26 @@
   flex-wrap: wrap;
   align-items: center;
   &--sb {
-    justify-content: space-between;
+    @include medium {
+      justify-content: space-between;
+    }
   }
 }
 
 .social-menu {
   li a {
-    margin-bottom: 0;
     margin-left: 15px;
+    margin-bottom: 0;
     color: #989898;
     &:hover {
       color: $dark-color;
     }
+  }
+}
+
+.d-none {
+  display: none;
+  @include medium {
+    display: block;
   }
 }
