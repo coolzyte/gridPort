@@ -1,6 +1,9 @@
 .slider {
   position: relative;
   justify-content: center;
+  @include medium {
+    justify-content: space-between;
+  }
   align-items: center;
   margin-top: 14.2rem;
   @include large {
@@ -52,26 +55,11 @@
       font-size: 2rem;
     }
   }
-  .btn {
-    background: transparent none repeat scroll 0 0;
-    border: 1px solid $primary-color;
-    color: $primary-color;
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-top: 4rem;
-    padding: 1.1rem 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    &:hover {
-      background: $primary-color;
-      color: #fff;
-    }
-  }
   &__social {
     margin-bottom: -10rem;
     @include medium {
       margin-bottom: -42rem;
+      text-align: right;
     }
     @include large {
       position: absolute;

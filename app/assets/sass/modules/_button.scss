@@ -1,0 +1,19 @@
+.btn {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  padding: 1.1rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  &--fs {
+    font-size: 1.4rem;
+  }
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}

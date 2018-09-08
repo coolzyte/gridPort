@@ -1,3 +1,9 @@
 .newsletter {
   grid-column: center-start / center-end;
+  &__box {
+    justify-content: center;
+    margin: auto;
+    max-width: 38rem;
+    position: relative;
+  }
 }

@@ -137,8 +137,8 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh -webkit-min-content 40vw repeat(6, -webkit-min-content);
-  grid-template-rows: 100vh min-content 40vw repeat(6, min-content);
+  grid-template-rows: 100vh repeat(6, -webkit-min-content);
+  grid-template-rows: 100vh repeat(6, min-content);
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14.6rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14.6rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end]; }
 
@@ -151,12 +151,17 @@ ul {
     font-weight: 600;
     line-height: 3.2rem;
     margin-bottom: 2rem; }
-  .section-title p {
+  .section-title .p {
     width: 61%;
     margin: auto; }
+    .section-title .p--no-margin {
+      margin: 0; }
 
 .center {
   text-align: center; }
+
+.left {
+  text-align: left; }
 
 .p-tb {
   padding: 15rem 0; }
@@ -233,13 +238,30 @@ ul {
 
 .footer {
   background-color: #0f151d;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 10rem 0; }
+  .footer__container {
+    border-bottom: 1px solid #555;
+    margin-bottom: 2rem;
+    padding-bottom: 3.5rem; }
+    .footer__container h2 {
+      color: #fff; }
+  .footer .copyright {
+    color: gray;
+    font-size: 1.2rem; }
+    .footer .copyright a {
+      color: #f5f5f5; }
+  .footer__bottom li a:hover {
+    color: #fff; }
 
 .slider {
   position: relative;
   justify-content: center;
   align-items: center;
   margin-top: 14.2rem; }
+  @media only screen and (min-width: 800px) {
+    .slider {
+      justify-content: space-between; } }
   @media only screen and (min-width: 1300px) {
     .slider {
       margin-top: 12.4rem; } }
@@ -283,25 +305,12 @@ ul {
     @media only screen and (max-width: 75em) {
       .slider h5 {
         font-size: 2rem; } }
-  .slider .btn {
-    background: transparent none repeat scroll 0 0;
-    border: 1px solid #303030;
-    color: #303030;
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-top: 4rem;
-    padding: 1.1rem 3rem;
-    text-align: center;
-    text-transform: uppercase; }
-    .slider .btn:hover {
-      background: #303030;
-      color: #fff; }
   .slider__social {
     margin-bottom: -10rem; }
     @media only screen and (min-width: 800px) {
       .slider__social {
-        margin-bottom: -42rem; } }
+        margin-bottom: -42rem;
+        text-align: right; } }
     @media only screen and (min-width: 1300px) {
       .slider__social {
         position: absolute;
@@ -369,7 +378,6 @@ ul {
             transform: translateX(-50%); }
 
 .works {
-  background-color: green;
   grid-column: center-start / center-end; }
 
 .testimonials {
@@ -378,3 +386,25 @@ ul {
 
 .newsletter {
   grid-column: center-start / center-end; }
+  .newsletter__box {
+    justify-content: center;
+    margin: auto;
+    max-width: 38rem;
+    position: relative; }
+
+.btn {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #303030;
+  color: #303030;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  padding: 1.1rem 3rem;
+  text-align: center;
+  text-transform: uppercase; }
+  .btn--fs {
+    font-size: 1.4rem; }
+  .btn:hover {
+    background: #303030;
+    color: #fff; }
