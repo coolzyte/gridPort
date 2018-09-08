@@ -1,4 +1,7 @@
 .header {
-  background-color: orange;
   grid-column: full-start / full-end;
+  background: $cloud-white;
+  .main-menu {
+    background: red;
+  }
 }

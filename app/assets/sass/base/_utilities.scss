@@ -39,3 +39,29 @@
   line-height: 5rem;
   padding-right: 1rem;
 }
+
+.wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &--sb {
+    justify-content: space-between;
+  }
+}
+
+.social-menu {
+  li a {
+    margin-bottom: 0;
+    margin-left: 15px;
+    color: #989898;
+    &:hover {
+      color: $dark-color;
+    }
+  }
+}

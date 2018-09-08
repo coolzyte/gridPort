@@ -1,3 +1,10 @@
+/* break points
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+1200px-1800px: normal style (pc)
+1800px+: large screens
+*/
 /* googel font Open Sans & Raleway */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800|Raleway:300,400,500,600,700,800,900");
 * {
@@ -100,8 +107,10 @@ select:focus {
 button.close {
   cursor: pointer; }
 
-.img {
-  max-width: 100%; }
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
 
 .full-img {
   width: 100%; }
@@ -128,10 +137,10 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: 2vh 100vh repeat(4, -webkit-min-content);
-  grid-template-rows: 2vh 100vh repeat(4, min-content);
-  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end]; }
+  grid-template-rows: 100vh -webkit-min-content 40vw repeat(6, -webkit-min-content);
+  grid-template-rows: 100vh min-content 40vw repeat(6, min-content);
+  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14.6rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14.6rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end]; }
 
 .section-title {
   text-align: center;
@@ -167,9 +176,30 @@ ul {
   line-height: 5rem;
   padding-right: 1rem; }
 
+.wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .flex-item--sb {
+    justify-content: space-between; }
+
+.social-menu li a {
+  margin-bottom: 0;
+  margin-left: 15px;
+  color: #989898; }
+  .social-menu li a:hover {
+    color: #0f151d; }
+
 .header {
-  background-color: orange;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  background: #ededed; }
+  .header .main-menu {
+    background: red; }
 
 .services {
   display: grid;
@@ -199,27 +229,31 @@ ul {
   grid-column: full-start / full-end; }
 
 .slider {
-  grid-column: full-start / full-end;
   position: relative;
-  background: #ededed; }
-  .slider__container {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, 14.35vh); }
-  .slider__text {
-    grid-column: 2 / 5;
-    grid-row: 3 / 7; }
-    .slider__text h1 {
-      display: inline-block;
-      font-size: 9rem;
-      font-weight: 900;
-      line-height: 8.5rem;
-      margin-bottom: 1.5rem; }
-    .slider__text h2 {
-      font-size: 3.4rem;
-      font-weight: 300;
-      line-height: 3.4rem; }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14.2rem; }
+  @media only screen and (min-width: 1300px) {
+    .slider {
+      margin-top: 12.4rem; } }
+  .slider__item {
+    position: relative; }
+  .slider__image {
+    max-width: 350px; }
+    @media only screen and (min-width: 1300px) {
+      .slider__image {
+        max-width: 100%; } }
+  .slider__text h1 {
+    display: inline-block;
+    font-size: 9rem;
+    font-weight: 900;
+    line-height: 8.5rem;
+    margin-bottom: 1.5rem; }
+  .slider__text h2 {
+    font-size: 3.4rem;
+    font-weight: 300;
+    line-height: 3.4rem; }
   .slider h5 {
     font-size: 2.8rem;
     font-weight: 400;
@@ -240,13 +274,13 @@ ul {
     .slider .btn:hover {
       background: #303030;
       color: #fff; }
-  .slider__image {
-    grid-column: 5 / 8;
-    grid-row: 2 / 10;
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    z-index: 12; }
+  .slider__social {
+    margin-bottom: -42rem; }
+    @media only screen and (min-width: 1300px) {
+      .slider__social {
+        position: absolute;
+        right: -184px;
+        top: 90%; } }
 
 .about-me {
   grid-column: center-start / center-end; }

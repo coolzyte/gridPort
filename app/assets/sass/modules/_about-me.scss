@@ -1,10 +1,10 @@
 .about-me {
   grid-column: center-start / center-end;
   &__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
   &__progress-bar {
     overflow: hidden;
     margin-left: 5rem;
@@ -48,7 +48,7 @@
     }
   }
   .progress-bar>span {
-    color: #303030;
+    color: $primary-color;
     font-size: 14px;
     height: 24px;
     line-height: 25px;
