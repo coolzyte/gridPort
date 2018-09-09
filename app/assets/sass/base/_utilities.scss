@@ -9,8 +9,16 @@
     margin-bottom: 2rem;
   }
   .p {
-    width: 61%;
-    margin: auto;
+    @include medium {
+      width: 61%;
+    }
+    margin-right: auto;
+    margin-left: auto;
+    &--small {
+      @include medium {
+        max-width: 56%;
+      }
+    }
     &--no-margin {
       margin: 0;
     }
@@ -26,7 +34,10 @@
 }
 
 .p-tb {
-  padding: 15rem 0;
+  padding: 8rem 0;
+  @include medium {
+    padding: 15rem 0;
+  }
 }
 
 .p-b {
@@ -51,11 +62,14 @@
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .flex-item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   &--sb {
     @include medium {

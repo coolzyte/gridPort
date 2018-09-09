@@ -152,8 +152,14 @@ ul {
     line-height: 3.2rem;
     margin-bottom: 2rem; }
   .section-title .p {
-    width: 61%;
-    margin: auto; }
+    margin-right: auto;
+    margin-left: auto; }
+    @media only screen and (min-width: 800px) {
+      .section-title .p {
+        width: 61%; } }
+    @media only screen and (min-width: 800px) {
+      .section-title .p--small {
+        max-width: 56%; } }
     .section-title .p--no-margin {
       margin: 0; }
 
@@ -164,7 +170,10 @@ ul {
   text-align: left; }
 
 .p-tb {
-  padding: 15rem 0; }
+  padding: 8rem 0; }
+  @media only screen and (min-width: 800px) {
+    .p-tb {
+      padding: 15rem 0; } }
 
 .p-b {
   padding-bottom: 15rem; }
@@ -184,11 +193,14 @@ ul {
 .wrapper {
   max-width: 1200px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
 
 .flex-item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center; }
   @media only screen and (min-width: 800px) {
     .flex-item--sb {
@@ -320,13 +332,21 @@ ul {
 .about-me {
   grid-column: center-start / center-end; }
   .about-me__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem; }
+    display: flex;
+    flex-wrap: wrap; }
+  @media only screen and (min-width: 800px) {
+    .about-me__text {
+      flex-basis: 50%; } }
   .about-me__progress-bar {
-    overflow: hidden;
-    margin-left: 5rem;
-    padding-top: 3.5rem; }
+    width: 100%;
+    padding-top: 7.5rem; }
+    @media only screen and (min-width: 800px) {
+      .about-me__progress-bar {
+        flex-basis: 40%; } }
+    @media only screen and (min-width: 800px) {
+      .about-me__progress-bar {
+        margin-left: 5rem;
+        padding-top: 3.5rem; } }
     .about-me__progress-bar .progress {
       display: flex;
       font-size: 0.75rem; }
@@ -336,7 +356,6 @@ ul {
       box-shadow: none;
       height: 13px;
       margin-bottom: 55px;
-      overflow: visible;
       position: relative; }
     .about-me__progress-bar .skill .progress .title {
       color: #222;
@@ -391,6 +410,27 @@ ul {
     margin: auto;
     max-width: 38rem;
     position: relative; }
+    .newsletter__box .submit {
+      background: #303030 none repeat scroll 0 0;
+      border: 0 none;
+      box-shadow: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-weight: 700;
+      height: 5rem;
+      line-height: 5rem;
+      text-transform: uppercase;
+      transition: all 300ms ease-in 0s;
+      width: 7rem; }
+  .newsletter__input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #777;
+    font-size: 1.5rem;
+    height: 5rem;
+    padding: 1rem 7.5rem;
+    width: calc(100% - 70px); }
 
 .btn {
   background: transparent none repeat scroll 0 0;

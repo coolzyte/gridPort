@@ -1,14 +1,26 @@
 .about-me {
   grid-column: center-start / center-end;
   &__content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-}
+    // display: grid; // grid-template-columns: repeat(2, 1fr);
+    // grid-gap: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__text {
+    @include medium {
+      flex-basis: 50%;
+    }
+  }
   &__progress-bar {
-    overflow: hidden;
-    margin-left: 5rem;
-    padding-top: 3.5rem;
+    width: 100%;
+    @include medium {
+      flex-basis: 40%;
+    }
+    padding-top: 7.5rem;
+    @include medium {
+      margin-left: 5rem;
+      padding-top: 3.5rem;
+    }
     .progress {
       display: flex;
       font-size: 0.75rem;
@@ -19,7 +31,6 @@
       box-shadow: none;
       height: 13px;
       margin-bottom: 55px;
-      overflow: visible;
       position: relative;
     }
     .skill .progress .title {
@@ -38,8 +49,6 @@
     }
     .progress-bar {
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
       flex-direction: column;
       justify-content: center;
       color: #fff;
