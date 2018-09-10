@@ -1,4 +1,11 @@
 .testimonials {
-  background-color: burlywood;
   grid-column: full-start / full-end;
+  &__image {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    img {
+      border-radius: 100px;
+    }
+  }
 }

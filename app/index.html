@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Grid Portfolio</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
   <!-- build:css assets/styles/styles.css-->
   <link rel="stylesheet" href="temp/styles/styles.css">
   <!-- endbuild -->
@@ -37,15 +38,15 @@
             </div>
           </div>
         </div>
-        <div class="slider flex-item flex-item--sb">
-          <div class="slider__text">
+        <div class="hero flex-item flex-item--sb">
+          <div class="hero__text">
             <h5>HAY! THERE</h5>
             <h1>I AM Smith</h1>
             <h2>A Professional Developer</h2>
             <a href="#" class="btn">hire me</a>
           </div>
-          <div class="slider__item flex-item">
-            <div class="slider__image d-none">
+          <div class="hero__item flex-item">
+            <div class="hero__image d-none">
               <img src="assets/images//slider/man2.png" alt="user pic">
             </div>
             <ul class="social-menu flex-item slider__social">
@@ -195,7 +196,33 @@
   <!-- Latest Work End -->
   </section>
   <section class="testimonials">
-    testimonials
+    <!-- Swiper -->
+    <div class="swiper-container overlay p-tb">
+      <div class="parallax-bg" style="background-image:url(../../assets/images/testimonial/testmonila-slider.jpg)"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide center">
+          <div class="testimonials__image"><img src="assets/images/testimonial/t1.png" alt=""></div>
+          <h3 class="heading heading--small">Jena John</h3>
+          <span>Developer Coolzyte</span>
+          <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and
+            praising pain was born and I will give you a complete account of the monen vai kemon asen</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonials__image"><img src="assets/images/testimonial/t1.png" alt=""></div>
+          <h3 class="heading heading--small">Jena John</h3>
+          <span>Developer Coolzyte</span>
+          <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and
+            praising pain was born and I will give you a complete account of the monen vai kemon asen</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonials__image"><img src="assets/images/testimonial/t1.png" alt=""></div>
+          <h3 class="heading heading--small">Jena John</h3>
+          <span>Developer Coolzyte</span>
+          <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and
+            praising pain was born and I will give you a complete account of the monen vai kemon asen</p>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="newsletter wrapper p-tb">
     <div class="section-title">
@@ -239,9 +266,21 @@
     </div>
   </footer>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+
   <!-- build:js assets/scripts/App.js -->
   <script src="/temp/scripts/App.js"></script>
   <!-- endbuild -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      }
+    });
+  </script>
 </body>
 
 </html>
