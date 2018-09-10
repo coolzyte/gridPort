@@ -11,6 +11,9 @@
   }
   &__item {
     position: relative;
+    @include large {
+      bottom: 4px;
+    }
   }
   &__image {
     max-width: 350px;

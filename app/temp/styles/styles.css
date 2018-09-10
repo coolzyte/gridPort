@@ -279,6 +279,9 @@ ul {
       margin-top: 12.4rem; } }
   .slider__item {
     position: relative; }
+    @media only screen and (min-width: 1300px) {
+      .slider__item {
+        bottom: 4px; } }
   .slider__image {
     max-width: 350px; }
     @media only screen and (min-width: 1300px) {
