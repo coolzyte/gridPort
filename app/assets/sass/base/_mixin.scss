@@ -1,5 +1,11 @@
+@mixin tiny() {
+  @media only screen and (max-width: 420px) {
+    @content;
+  }
+}
+
 @mixin small() {
-  @media only screen and (min-width: 520px) {
+  @media only screen and (min-width: 575px) {
     @content;
   }
 }
@@ -11,7 +17,7 @@
 }
 
 @mixin large {
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: 1200px) {
     @content;
   }
 }

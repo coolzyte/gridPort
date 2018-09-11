@@ -1,3 +1,21 @@
+/*
+Template: Theme Name
+Author:
+Version: 1.0
+Design and Developed by:
+NOTE: Please do not change anything here! write in a custom.css file if required!
+
+
+*/
+
+/*======================================
+  Table of contents
+  ======================================
+
+  ======================================
+  End table of content
+  ======================================*/
+
 /* googel font Open Sans & Raleway */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800|Raleway:300,400,500,600,700,800,900");
@@ -6,28 +24,19 @@
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 html {
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  font-family: $font-default;
-  color: $primary-color;
-  font-size: 1.6rem;
+  font-family: $default-font;
+  color: $mine-shaft;
+  font-size: 16px;
   line-height: 1.25em;
 }
 
-.wrapper {
+.page {
   position: relative;
 }
 
@@ -39,12 +48,12 @@ h5,
 h6 {
   margin: 0;
   text-transform: uppercase;
-  font-family: $font-title;
+  font-family: $title-font;
 }
 
 p {
-  color: $secondary-color;
-  font-family: $font-default;
+  color: $scopion;
+  font-family: $default-font;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.4rem;
@@ -59,6 +68,10 @@ textarea {
   transition: all 300ms ease-in 0s;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 a,
 a:active,
 a:hover,
@@ -67,87 +80,14 @@ a:focus {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
 }
 
 .box-layout {
   background: #fff none repeat scroll 0 0;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 9rem;
-}
-
-input:focus {
-  outline: none;
-}
-
-input,
-select {
-  font-size: 14px;
-}
-
-canvas {
-  vertical-align: middle;
-}
-
-option {
-  background: #ffffff none repeat scroll 0 0;
-  padding: 5px 0 5px 10px;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-}
-
-textarea {
-  resize: none;
-}
-
-button:focus,
-select:focus {
-  outline: none;
-}
-
-button.close {
-  cursor: pointer;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.full-img {
-  width: 100%;
-}
-
-.menu-hidden {
-  display: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active,
-a:hover,
-a:focus {
-  outline: 0 none;
-  text-decoration: none;
-}
-
-h4 a:hover {
-  color: #3498db;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  margin: 0 90px;
 }
 
 ul {
@@ -158,6 +98,9 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat( 8, [col-start] minmax(min-content, 14.6rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+  grid-template-rows: repeat(6, min-content);
+  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14.6rem) [col-end]
+    ) [center-end] minmax(2rem, 1fr) [full-end];
 }

@@ -1,0 +1,10 @@
+.site-header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 3rem;
+  z-index: 39;
+  &__menu-container {
+    justify-content: space-between;
+  }
+}

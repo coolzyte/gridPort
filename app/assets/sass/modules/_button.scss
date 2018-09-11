@@ -1,19 +1,20 @@
 .btn {
   background: transparent none repeat scroll 0 0;
-  border: 1px solid $primary-color;
-  color: $primary-color;
+  border: 1px solid $mine-shaft;
+  color: $mine-shaft;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-top: 4rem;
-  padding: 1.1rem 3rem;
+  margin-top: 3rem;
+  padding: 1rem 2.5rem;
   text-align: center;
   text-transform: uppercase;
-  &--fs {
-    font-size: 1.4rem;
+  @include small {
+    font-size: 2rem;
+    padding: 1.1rem 3rem;
   }
   &:hover {
-    background: $primary-color;
+    background: $mine-shaft;
     color: #fff;
   }
 }

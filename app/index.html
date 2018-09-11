@@ -19,67 +19,80 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="wrapper">
-        <div class="main-menu">
-          <div class="flex-item flex-item--sb">
-            <div class="header__logo">Logo</div>
-            <div class="header__nav">
-              <nav>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+
+  <!--Start Header-->
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__menu-container flex-item">
+        <div class="site-header__logo">
+          <div class="site-header__logo__graphic">CoolZyte</div>
         </div>
-        <div class="hero flex-item flex-item--sb">
-          <div class="hero__text">
-            <h5>HAY! THERE</h5>
-            <h1>I AM Smith</h1>
-            <h2>A Professional Developer</h2>
-            <a href="#" class="btn">hire me</a>
-          </div>
-          <div class="hero__item flex-item">
-            <div class="hero__image d-none">
-              <img src="assets/images//slider/man2.png" alt="user pic">
-            </div>
-            <ul class="social-menu flex-item slider__social">
-              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+        <div class="site-header__menu-content flex-item">
+          <nav class="primary-nav">
+            <ul class="flex-item">
+              <li class="active">Home</li>
+              <li class="active">About us</li>
+              <li class="active">Portfolio</li>
+              <li class="active">Blog</li>
+              <li class="active">Service</li>
+              <li class="active">Contact</li>
             </ul>
+          </nav>
+          <div class="site-header__menu-icon">
+            <div class="site-header__menu-icon__middle">M</div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
+  <!--End Header-->
+  <!--Start Hero-->
+  <div class="hero">
+    <div class="wrapper">
+      <div class="hero__text-content">
+        <h5>HAY! THERE</h5>
+        <h1>I AM smith</h1>
+        <h2>a professional
+          <span class="cd-words-wrapper">
+            developer
+            <!-- <b>developer</b>
+            <b>Freelancer</b>
+            <b>trainer</b>
+            <b>employer</b> -->
+          </span>
+        </h2>
+        <a href="#" class="btn">hire me</a>
+      </div>
+      <div class="hero__pic hero__pic--right">
+        <img src="assets/images/slider/man2.png" alt="" class="image" alt="pic">
+      </div>
+    </div>
+    <ul class="social-menu social-menu--mod flex-item">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <!--End Hero-->
+  <div class="container">
+    <!--About Section-->
     <section class="about-me p-tb">
       <div class="section-title">
         <h2 class="heading">Some Word's About Me</h2>
-        <p class="p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-          magni
+        <p class="p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
           dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est</p>
       </div>
       <div class="about-me__content">
         <div class="about-me__text">
-          <p class="m-bottom-2"><span class="letter-big">S</span>abuj must explain to you how all this mistaken idea of
-            denouncing
-            pleasure and praising pain was born and I will give you a complete account of the system, and expound the
-            actual
-            teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects,
-            dislikes,
+          <p class="m-bottom-2"><span class="letter-big">S</span>abuj must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual
+            teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes,
             or avoids pleasure itself</p>
-          <p>Imust explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will
-            give you a complete account of the system, and expound the actual teachings of the great explorer of the
-            truth,
+          <p>Imust explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
+            give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
             the master-builder</p>
           <a href="#" class="btn btn--fs">Download CV</a>
         </div>
@@ -105,11 +118,14 @@
         </div>
       </div>
     </section>
+
+    <!--End About Section-->
+
+    <!--Start Work Section-->
     <section class="works wrapper">
       <div class="section-title left">
         <h2 class="heading">CHECK LATEST WORK</h2>
-        <p class="p p--no-margin">But I must explain to you how all this mistaken idea of denouncing pleasure and
-          praising
+        <p class="p p--no-margin">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
           pain was born and I will give you a complete account of the monen vai kemon asen</p>
       </div>
       <!-- Section Title End -->
@@ -189,12 +205,12 @@
             </div>
           </div>
         </div>
-        <!-- End row -->
       </div>
-  </div>
   </div>
   <!-- Latest Work End -->
   </section>
+
+  <!-- Start Testimonials-->
   <section class="testimonials">
     <!-- Swiper -->
     <div class="swiper-container overlay p-tb">
@@ -204,33 +220,35 @@
           <div class="testimonials__image"><img src="assets/images/testimonial/t1.png" alt=""></div>
           <h3 class="heading heading--small">Jena John</h3>
           <p>Developer Coolzyte</p>
-          <p class="p-w p-w--s">But I must explain to you how all this mistaken idea of denouncing pleasure and
-            praising pain was born and I will give you a complete account of the monen vai kemon asen</p>
+          <p class="p-w p-w--s">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+            pain was born and I will give you a complete account of the monen vai kemon asen</p>
         </div>
         <div class="swiper-slide">
           <div class="testimonials__image"><img src="assets/images/testimonial/t1.png" alt=""></div>
           <h3 class="heading heading--small">Jena John</h3>
           <span>Developer Coolzyte</span>
-          <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and
-            praising pain was born and I will give you a complete account of the monen vai kemon asen</p>
+          <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+            pain was born and I will give you a complete account of the monen vai kemon asen</p>
         </div>
         <div class="swiper-slide">
           <div class="testimonials__image"><img src="assets/images/testimonial/t1.png" alt=""></div>
           <h3 class="heading heading--small">Jena John</h3>
           <span>Developer Coolzyte</span>
-          <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and
-            praising pain was born and I will give you a complete account of the monen vai kemon asen</p>
+          <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+            pain was born and I will give you a complete account of the monen vai kemon asen</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!--End Testimonial-->
+
+  <!--Start News Letter-->
   <section class="newsletter wrapper p-tb">
     <div class="section-title">
       <h2 class="heading">Subscribe Newsletter</h2>
-      <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-        pain was
-        born
-        and I will give you a complete account of the monen vai kemon asen</p>
+      <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+        was born and I will give you a complete account of the monen vai kemon asen</p>
     </div>
     <div class="newsletter__box flex-item">
       <form action="" class="flex-item">
@@ -239,15 +257,15 @@
       </form>
     </div>
   </section>
+
+  <!--End News Letter-->
+
   <footer class="footer p-tb">
     <div class="section-title footer__container">
       <h2 class="heading">CoolZyte</h2>
       <div class="wrapper">
-        <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and
-          praising
-          pain was
-          born
-          and I will give you a complete account of the monen vai kemon asen</p>
+        <p class="p p--small">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+          was born and I will give you a complete account of the monen vai kemon asen</p>
       </div>
     </div>
     <div class="footer__bottom wrapper flex-item flex-item--sb">
@@ -265,7 +283,9 @@
       </div>
     </div>
   </footer>
+
   </div>
+  <!--container End-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 
   <!-- build:js assets/scripts/App.js -->
