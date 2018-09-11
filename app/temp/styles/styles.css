@@ -138,7 +138,7 @@ ul {
     margin-bottom: 2rem; }
   @media only screen and (min-width: 800px) {
     .section-title p {
-      width: 55%;
+      width: 57%;
       margin: auto; } }
 
 .center {
@@ -202,11 +202,25 @@ ul {
   @media only screen and (min-width: 1300px) {
     .hero {
       height: 100vh; } }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .hero h5 {
+        font-weight: 300;
+        margin-bottom: 1rem; } }
   .hero__pic {
     position: absolute;
     bottom: 0;
     left: 25%;
     z-index: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__pic {
+        display: none; } }
     .hero__pic img {
       max-width: 35rem; }
       @media only screen and (min-width: 1300px) {
@@ -215,47 +229,52 @@ ul {
     .hero__pic--right {
       left: auto;
       right: 19%; }
-  .hero__text-content {
-    position: absolute;
-    top: 40%;
-    z-index: 2; }
-    .hero__text-content h1 {
-      font-size: 3.5rem;
-      line-height: 3.5rem;
-      margin-bottom: 1rem; }
-      @media only screen and (min-width: 575px) {
-        .hero__text-content h1 {
-          font-size: 9rem;
-          font-weight: 900;
-          line-height: 8.5rem;
-          margin-bottom: 1.5rem; } }
-    .hero__text-content h2 {
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 2rem; }
-      @media only screen and (min-width: 575px) {
-        .hero__text-content h2 {
-          font-size: 3.4rem;
-          line-height: 3rem; } }
-    .hero__text-content h5 {
-      font-size: 2.2rem;
-      letter-spacing: 0.2rem;
-      word-spacing: 0; }
-      @media only screen and (min-width: 575px) {
-        .hero__text-content h5 {
-          font-size: 2.8rem;
-          font-weight: 400;
-          letter-spacing: 0.6rem;
-          margin-bottom: 1rem;
-          word-spacing: 0.5rem; } }
+  @media only screen and (min-width: 800px) {
+    .hero__text-content {
+      position: absolute;
+      top: 40%;
+      z-index: 2; } }
+  .hero__text-content h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem; }
+    @media only screen and (min-width: 575px) {
+      .hero__text-content h1 {
+        font-size: 9rem;
+        font-weight: 900;
+        line-height: 8.5rem;
+        margin-bottom: 1.5rem; } }
+  .hero__text-content h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem; }
+    @media only screen and (min-width: 575px) {
+      .hero__text-content h2 {
+        font-size: 3.4rem;
+        line-height: 3rem; } }
+  .hero__text-content h5 {
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0; }
+    @media only screen and (min-width: 575px) {
+      .hero__text-content h5 {
+        font-size: 2.8rem;
+        font-weight: 400;
+        letter-spacing: 0.6rem;
+        margin-bottom: 1rem;
+        word-spacing: 0.5rem; } }
   .hero .social-menu {
-    position: absolute;
-    bottom: 7.5rem;
-    left: 7.5rem;
-    z-index: 13; }
-    .hero .social-menu--mod {
-      right: 7.5rem;
-      left: auto; }
+    margin-top: 3rem; }
+    @media only screen and (min-width: 800px) {
+      .hero .social-menu {
+        position: absolute;
+        bottom: 7.5rem;
+        left: 7.5rem;
+        z-index: 13;
+        margin-top: 0; }
+        .hero .social-menu--mod {
+          right: 7.5rem;
+          left: auto; } }
 
 .primary-nav {
   display: none; }

@@ -6,7 +6,22 @@
   @include large {
     height: 100vh;
   }
+  @include respond(tab-port) {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h5 {
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
   &__pic {
+    @include respond(tab-port) {
+      display: none;
+    }
     position: absolute;
     bottom: 0;
     left: 25%;
@@ -23,9 +38,11 @@
     }
   }
   &__text-content {
-    position: absolute;
-    top: 40%;
-    z-index: 2;
+    @include medium {
+      position: absolute;
+      top: 40%;
+      z-index: 2;
+    }
     h1 {
       font-size: 3.5rem;
       line-height: 3.5rem;
@@ -60,13 +77,17 @@
     }
   }
   .social-menu {
-    position: absolute;
-    bottom: 7.5rem;
-    left: 7.5rem;
-    z-index: 13;
-    &--mod {
-      right: 7.5rem;
-      left: auto;
+    margin-top: 3rem;
+    @include medium {
+      position: absolute;
+      bottom: 7.5rem;
+      left: 7.5rem;
+      z-index: 13;
+      margin-top: 0;
+      &--mod {
+        right: 7.5rem;
+        left: auto;
+      }
     }
   }
 }
