@@ -151,17 +151,6 @@ ul {
     font-weight: 600;
     line-height: 3.2rem;
     margin-bottom: 2rem; }
-  .section-title .p {
-    margin-right: auto;
-    margin-left: auto; }
-    @media only screen and (min-width: 800px) {
-      .section-title .p {
-        width: 61%; } }
-    @media only screen and (min-width: 800px) {
-      .section-title .p--small {
-        max-width: 56%; } }
-    .section-title .p--no-margin {
-      margin: 0; }
 
 .center {
   text-align: center; }
@@ -420,6 +409,12 @@ ul {
     margin: auto; }
     .testimonials__image img {
       border-radius: 100px; }
+  .testimonials .swiper-slide * {
+    margin-bottom: 2.5rem; }
+  .testimonials .swiper-slide p {
+    max-width: 32%;
+    margin: auto;
+    color: #fff; }
 
 .newsletter {
   grid-column: center-start / center-end; }

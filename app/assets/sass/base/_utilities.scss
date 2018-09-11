@@ -8,21 +8,6 @@
     line-height: 3.2rem;
     margin-bottom: 2rem;
   }
-  .p {
-    @include medium {
-      width: 61%;
-    }
-    margin-right: auto;
-    margin-left: auto;
-    &--small {
-      @include medium {
-        max-width: 56%;
-      }
-    }
-    &--no-margin {
-      margin: 0;
-    }
-  }
 }
 
 .center {

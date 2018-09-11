@@ -8,4 +8,14 @@
       border-radius: 100px;
     }
   }
+  .swiper-slide {
+    * {
+      margin-bottom: 2.5rem;
+    }
+    p {
+      max-width: 32%;
+      margin: auto;
+      color: #fff;
+    }
+  }
 }
