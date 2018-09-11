@@ -1,9 +1,11 @@
 .hero {
-  grid-column: full-start / full-end;
   background: $gallery;
   position: relative;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
+  @include large {
+    height: 100vh;
+  }
   &__pic {
     position: absolute;
     bottom: 0;
@@ -11,7 +13,7 @@
     z-index: 1;
     img {
       max-width: 35rem;
-      @include medium {
+      @include large {
         max-width: 100%;
       }
     }
@@ -56,16 +58,19 @@
         word-spacing: 0.5rem;
       }
     }
-  } // &__social {
-  //   margin-bottom: -10rem;
-  //   @include medium {
-  //     margin-bottom: -42rem;
-  //     text-align: right;
-  //   }
-  //   @include large {
-  //     position: absolute;
-  //     right: -184px;
-  //     top: 90%;
-  //   }
-  // }
+  }
+  .social-menu {
+    position: absolute;
+    bottom: 7.5rem;
+    left: 7.5rem;
+    z-index: 13;
+    &--mod {
+      right: 7.5rem;
+      left: auto;
+    }
+  }
+}
+
+.primary-nav {
+  display: none;
 }

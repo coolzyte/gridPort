@@ -36,10 +36,6 @@ body {
   line-height: 1.25em;
 }
 
-.page {
-  position: relative;
-}
-
 h1,
 h2,
 h3,
@@ -80,14 +76,33 @@ a:focus {
   text-decoration: none;
 }
 
-p {
-  margin: 0;
+input:focus {
+  outline: none;
 }
 
-.box-layout {
-  background: #fff none repeat scroll 0 0;
-  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
-  margin: 0 90px;
+input,
+select {
+  font-size: 1.4rem;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+button:focus,
+select:focus {
+  outline: none;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
@@ -98,7 +113,7 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(6, min-content);
+  grid-template-rows: repeat(5, min-content);
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14.6rem) [col-end]

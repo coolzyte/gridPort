@@ -1,5 +1,5 @@
 .footer {
-  background-color: $dark-color;
+  background-color: $bunker;
   grid-column: full-start / full-end;
   padding: 10rem 0;
   &__container {
@@ -18,6 +18,7 @@
     }
   }
   &__bottom {
+    justify-content: space-between;
     li a:hover {
       color: #fff;
     }
