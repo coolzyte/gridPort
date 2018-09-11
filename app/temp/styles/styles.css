@@ -137,8 +137,8 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh repeat(6, -webkit-min-content);
-  grid-template-rows: 100vh repeat(6, min-content);
+  grid-template-rows: 100vh repeat(5, -webkit-min-content);
+  grid-template-rows: 100vh repeat(5, min-content);
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14.6rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14.6rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end]; }
 
@@ -151,17 +151,6 @@ ul {
     font-weight: 600;
     line-height: 3.2rem;
     margin-bottom: 2rem; }
-  .section-title .p {
-    margin-right: auto;
-    margin-left: auto; }
-    @media only screen and (min-width: 800px) {
-      .section-title .p {
-        width: 61%; } }
-    @media only screen and (min-width: 800px) {
-      .section-title .p--small {
-        max-width: 56%; } }
-    .section-title .p--no-margin {
-      margin: 0; }
 
 .center {
   text-align: center; }
@@ -219,6 +208,16 @@ ul {
     .d-none {
       display: block; } }
 
+.overlay::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9; }
+
 .header {
   grid-column: full-start / full-end;
   background: #ededed; }
@@ -266,68 +265,68 @@ ul {
   .footer__bottom li a:hover {
     color: #fff; }
 
-.slider {
+.hero {
   position: relative;
   justify-content: center;
   align-items: center;
   margin-top: 14.2rem; }
   @media only screen and (min-width: 800px) {
-    .slider {
+    .hero {
       justify-content: space-between; } }
   @media only screen and (min-width: 1300px) {
-    .slider {
+    .hero {
       margin-top: 12.4rem; } }
-  .slider__item {
+  .hero__item {
     position: relative; }
     @media only screen and (min-width: 1300px) {
-      .slider__item {
+      .hero__item {
         bottom: 4px; } }
-  .slider__image {
+  .hero__image {
     max-width: 350px; }
     @media only screen and (min-width: 1300px) {
-      .slider__image {
+      .hero__image {
         max-width: 100%; } }
-  .slider__text {
+  .hero__text {
     text-align: center; }
     @media only screen and (min-width: 800px) {
-      .slider__text {
+      .hero__text {
         text-align: left; } }
-    .slider__text h1 {
+    .hero__text h1 {
       display: inline-block;
       font-size: 9rem;
       font-weight: 900;
       line-height: 8.5rem;
       margin-bottom: 1.5rem; }
       @media only screen and (max-width: 75em) {
-        .slider__text h1 {
+        .hero__text h1 {
           font-size: 4rem;
           line-height: 3.5rem;
           margin-bottom: 1rem; } }
-    .slider__text h2 {
+    .hero__text h2 {
       font-size: 3.4rem;
       font-weight: 300;
       line-height: 3.4rem; }
       @media only screen and (max-width: 75em) {
-        .slider__text h2 {
+        .hero__text h2 {
           font-size: 1.8rem;
           line-height: 2rem; } }
-  .slider h5 {
+  .hero h5 {
     font-size: 2.8rem;
     font-weight: 400;
     letter-spacing: 0.6rem;
     margin-bottom: 1rem;
     word-spacing: 0.5rem; }
     @media only screen and (max-width: 75em) {
-      .slider h5 {
+      .hero h5 {
         font-size: 2rem; } }
-  .slider__social {
+  .hero__social {
     margin-bottom: -10rem; }
     @media only screen and (min-width: 800px) {
-      .slider__social {
+      .hero__social {
         margin-bottom: -42rem;
         text-align: right; } }
     @media only screen and (min-width: 1300px) {
-      .slider__social {
+      .hero__social {
         position: absolute;
         right: -184px;
         top: 90%; } }
@@ -403,8 +402,19 @@ ul {
   grid-column: center-start / center-end; }
 
 .testimonials {
-  background-color: burlywood;
   grid-column: full-start / full-end; }
+  .testimonials__image {
+    height: 100px;
+    width: 100px;
+    margin: auto; }
+    .testimonials__image img {
+      border-radius: 100px; }
+  .testimonials .swiper-slide * {
+    margin-bottom: 2.5rem; }
+  .testimonials .swiper-slide p {
+    max-width: 32%;
+    margin: auto;
+    color: #fff; }
 
 .newsletter {
   grid-column: center-start / center-end; }
@@ -451,3 +461,36 @@ ul {
   .btn:hover {
     background: #303030;
     color: #fff; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #000; }
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center; }
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center; }
+
+.swiper-slide .title {
+  margin-bottom: 2rem;
+  font-size: 41px;
+  font-weight: 300; }
+
+.swiper-slide .subtitle {
+  font-size: 21px; }
+
+.swiper-slide .text {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #fff; }
