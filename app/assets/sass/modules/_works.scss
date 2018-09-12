@@ -1,3 +1,129 @@
 .works {
   grid-column: center-start / center-end;
+  padding-bottom: 15rem;
+  &__menu {
+    button {
+      background: transparent none repeat scroll 0 0;
+      border: medium none;
+      color: $dove-gray;
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      margin-right: 1.5rem;
+      padding: 0;
+      text-transform: uppercase;
+      &:active {
+        color: #000;
+      }
+      &:hover {
+        color: #000;
+      }
+    }
+  } // Portfolio
+  // Css
+  .portfolio {
+    position: relative;
+    margin-top: 3rem;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }
+    &:before {
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      transition: all 0.5s ease-in;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      z-index: 16;
+    }
+  }
+  .portfolio:hover:before,
+  .portfolio:hover .portfolio-hover,
+  .portfolio:hover .portfolio-action {
+    opacity: 1;
+  }
+  .portfolio {
+    &:hover img,
+    &:before,
+    &-hover h3 a:before {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .portfolio {
+    &:hover .portfolio-action {
+      margin-left: 0;
+    }
+  }
+  .portfolio-hover {
+    margin-top: 2rem;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in 0s;
+    width: 100%;
+    z-index: 18;
+    h3 {
+      position: relative;
+      display: inline-block;
+      line-height: 2.4rem;
+      & a:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 0;
+        height: 1px;
+        background: #eee;
+        display: block;
+      }
+    }
+    h3 a {
+      color: $gallery-2;
+      display: inline-block;
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+    p {
+      color: $gallery-2;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      padding-top: 2px;
+    }
+  }
+  .portfolio:hover .portfolio-hover {
+    margin-top: 0;
+  }
+  .portfolio-hover h3:hover a:before {
+    width: 100%;
+  }
+  .portfolio-action {
+    bottom: 3rem;
+    left: 4rem;
+    margin-left: 3rem;
+    position: absolute;
+    opacity: 0;
+    z-index: 19;
+    transition: all 0.3s ease-in-out;
+    a {
+      color: $gallery-2;
+      font-size: 2.5rem;
+      margin-right: 2.8rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .portfolio-action a:hover,
+  .portfolio-hover h3 a:hover {
+    color: #fff;
+  }
 }
