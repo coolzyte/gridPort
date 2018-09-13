@@ -19,8 +19,21 @@
         color: #000;
       }
     }
-  } // Portfolio
-  // Css
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    .grid-item.web.sketch {
+      grid-row: 2 / 2;
+    }
+    .grid-item.app.sketch {
+      grid-column: 2 / span 1;
+      .portfolio {
+        margin-top: 2.5rem;
+      }
+    }
+  }
   .portfolio {
     position: relative;
     margin-top: 3rem;

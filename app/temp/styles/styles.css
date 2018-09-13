@@ -396,6 +396,16 @@ ul {
       color: #000; }
     .works__menu button:hover {
       color: #000; }
+  .works__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem; }
+    .works__row .grid-item.web.sketch {
+      grid-row: 2 / 2; }
+    .works__row .grid-item.app.sketch {
+      grid-column: 2 / span 1; }
+      .works__row .grid-item.app.sketch .portfolio {
+        margin-top: 2.5rem; }
   .works .portfolio {
     position: relative;
     margin-top: 3rem;
