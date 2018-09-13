@@ -7,4 +7,64 @@
   &__menu-container {
     justify-content: space-between;
   }
+  &__menu-content {
+    flex-wrap: nowrap;
+  }
+  &__menu-icon {
+    position: relative;
+    width: 3rem;
+    vertical-align: middle;
+    padding: 0;
+    overflow: hidden;
+    outline: medium none;
+    margin: 0;
+    line-height: 3rem;
+    height: 3.5rem;
+    display: inline-block;
+    border: medium none;
+    background: transparent none repeat scroll 0 0;
+    &__middle {
+      position: absolute;
+      display: block;
+      height: 3px;
+      background: $mine-shaft;
+      margin: 0.6rem;
+      transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+      transform-origin: center center;
+      width: 100%;
+      &:before {
+        content: "";
+        display: block;
+        height: 3px;
+        background: $mine-shaft;
+        margin: 0.6rem 0;
+        transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+        transform-origin: center center;
+        width: 100%;
+      }
+      &:after {
+        content: "";
+        display: block;
+        height: 3px;
+        background: $mine-shaft;
+        margin: 0.6rem 0;
+        margin-top: -3px;
+        transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+        transform-origin: center center;
+        width: 100%;
+      }
+    }
+  }
+  &__menu-icon--close-x {
+    &:before {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    &:after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
 }
