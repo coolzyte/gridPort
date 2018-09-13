@@ -282,9 +282,6 @@ ul {
           right: 7.5rem;
           left: auto; } }
 
-.primary-nav {
-  display: none; }
-
 .services {
   display: grid;
   grid-template-rows: 2vh 45vh repeat(6, -webkit-min-content);
