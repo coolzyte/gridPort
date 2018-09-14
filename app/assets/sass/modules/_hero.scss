@@ -7,7 +7,8 @@
     height: 100vh;
   }
   @include respond(tab-port) {
-    height: 60vh;
+    height: auto;
+    padding: 13rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;

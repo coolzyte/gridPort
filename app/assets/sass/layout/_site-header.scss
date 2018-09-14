@@ -53,18 +53,17 @@
         transform-origin: center center;
         width: 100%;
       }
-    }
-  }
-  &__menu-icon--close-x {
-    &:before {
-      transform: rotate(45deg) scaleX(1.25);
-    }
-    .site-header__menu-icon__middle {
-      opacity: 0;
-      transform: scaleX(0);
-    }
-    &:after {
-      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-    }
+    } // &--close-x {
+    //   .site-header__menu-icon__middle {
+    //     opacity: 0;
+    //     transform: scaleX(0);
+    //   }
+    //   &:before {
+    //     transform: rotate(45deg) scaleX(1.25);
+    //   }
+    //   &:after {
+    //     transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    //   }
+    // }
   }
 }
