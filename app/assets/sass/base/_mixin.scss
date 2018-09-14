@@ -37,27 +37,6 @@
   transform: translate(-50%, -50%);
 }
 
-// media query and mixin
-/* break points
-0-600px: phone
-600-900px: tablet portrait
-900-1200px: tablet landscape
-1200px-1800px: normal style (pc)
-1800px+: large screens
-*/
-
-//ORDER OF MEDIA QUERY: BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
-// $breakpoint argument chioces:
-// "phone"
-// "tab-port"
-// "tab-land"
-// "big-desktop"
-// here we use em, it has better browser support, but be aware that
-// 1) em or rem in media query break points are always reference to the browser default font-size,
-// and not effected by any reset from the root level
-// 2) user can manually configure their browser font-size, so the value of breakpoints will be
-// calculated differently
-// 3) by default, 1em == 16px
 @mixin respond($breakpoint) {
   @if $breakpoint==phone {
     // width < 600

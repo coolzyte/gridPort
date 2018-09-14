@@ -23,6 +23,9 @@
   &__row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
     grid-gap: 2rem;
     .grid-item.web.sketch {
       grid-row: 2 / 2;

@@ -1,10 +1,3 @@
-/* break points
-0-600px: phone
-600-900px: tablet portrait
-900-1200px: tablet landscape
-1200px-1800px: normal style (pc)
-1800px+: large screens
-*/
 /*
 Template: Theme Name
 Author:
@@ -352,10 +345,16 @@ ul {
   .footer .copyright {
     color: gray;
     font-size: 1.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer .copyright {
+        margin-bottom: 1rem; } }
     .footer .copyright a {
       color: #f5f5f5; }
   .footer__bottom {
     justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__bottom {
+        justify-content: center; } }
     .footer__bottom li a:hover {
       color: #fff; }
 
@@ -447,6 +446,9 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .works__row {
+        grid-template-columns: 1fr; } }
     .works__row .grid-item.web.sketch {
       grid-row: 2 / 2; }
     .works__row .grid-item.app.sketch {
