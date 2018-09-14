@@ -9,12 +9,11 @@
       left: 0;
       width: 50%;
       height: auto;
-      padding: 0 0 11.7rem;
-      transform: scaleX(0);
+      transform: scaleY(0);
       transform-origin: 0 -100%;
       transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
       &--is-visible {
-        transform: scaleX(1);
+        transform: scaleY(1);
       }
     }
     @include medium {

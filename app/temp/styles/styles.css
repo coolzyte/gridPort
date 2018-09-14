@@ -645,15 +645,14 @@ ul {
     left: 0;
     width: 50%;
     height: auto;
-    padding: 0 0 11.7rem;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transform-origin: 0 -100%;
             transform-origin: 0 -100%;
     transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s; }
     .primary-nav__content--is-visible {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1); } }
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1); } }
 
 @media only screen and (min-width: 800px) {
   .primary-nav__content {
