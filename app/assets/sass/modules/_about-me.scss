@@ -77,3 +77,69 @@
     transform: translateX(-50%);
   }
 }
+
+/* Exper Section */
+
+.expert {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    position: relative;
+  }
+  &__image {
+    position: relative;
+    @include medium {
+      margin-top: 4rem;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 22;
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__heading {
+    h2 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      line-height: 3.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+    .grid-item {
+      margin-top: 3rem;
+      span {
+        color: #e9e9e9;
+        font-size: 3.2rem;
+        font-weight: 600;
+        display: inline-block;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 1.7rem 0 1.5rem;
+      }
+    }
+  }
+}
