@@ -6,6 +6,9 @@
   z-index: 39;
   &__menu-container {
     justify-content: space-between;
+    @include respond (tab-port) {
+      padding: 0 1.6rem;
+    }
   }
   &__menu-content {
     flex-wrap: nowrap;

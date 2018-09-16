@@ -34,6 +34,9 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    @include respond(tab-port) {
+      padding: 0 1.6rem;
+    }
   }
   &__item,
   a {

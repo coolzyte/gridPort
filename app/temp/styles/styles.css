@@ -207,6 +207,9 @@ ul {
   z-index: 39; }
   .site-header__menu-container {
     justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .site-header__menu-container {
+        padding: 0 1.6rem; } }
   .site-header__menu-content {
     flex-wrap: nowrap; }
   .site-header__menu-icon {
@@ -346,7 +349,9 @@ ul {
     margin-bottom: 2rem;
     padding-bottom: 3.5rem; }
     .footer__container h2 {
-      color: #fff; }
+      color: #ebebeb; }
+    .footer__container p {
+      padding: 0 1.6rem; }
   .footer .copyright {
     color: gray;
     font-size: 1.2rem; }
@@ -354,10 +359,14 @@ ul {
       .footer .copyright {
         margin-bottom: 1rem; } }
     .footer .copyright a {
-      color: #f5f5f5; }
+      color: #ebebeb; }
   .footer__bottom {
+    flex-wrap: wrap;
     justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
+      .footer__bottom {
+        padding: 0 1.6rem; } }
+    @media only screen and (max-width: 37.5em) {
       .footer__bottom {
         justify-content: center; } }
     .footer__bottom li a:hover {
@@ -809,6 +818,9 @@ ul {
     display: flex;
     justify-content: flex-end;
     list-style: none; }
+    @media only screen and (max-width: 56.25em) {
+      .banner__list {
+        padding: 0 1.6rem; } }
   .banner__item,
   .banner a {
     color: #818181;
