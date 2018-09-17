@@ -9,12 +9,28 @@
   padding: 1rem 2.5rem;
   text-align: center;
   text-transform: uppercase;
-  @include small {
-    font-size: 2rem;
-    padding: 1.1rem 3rem;
-  }
   &:hover {
     background: $mine-shaft;
     color: #fff;
+  }
+  &--send {
+    color: #fff;
+    background: $mine-shaft;
+    border: 1px solid transparent;
+    font-family: $title-font;
+    font-size: 1.2rem !important;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    padding: 0.8rem 2.5rem 0.7rem;
+    &:hover {
+      background: transparent;
+      color: $mine-shaft;
+      border-color: $mine-shaft;
+    }
+  }
+  @include small {
+    font-size: 2rem;
+    padding: 1.1rem 3rem;
   }
 }

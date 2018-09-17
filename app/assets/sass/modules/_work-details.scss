@@ -1,0 +1,30 @@
+.work-details {
+  &__container {
+    display: grid;
+    grid-template-columns: 77rem 1fr;
+    grid-gap: 5rem;
+  }
+  &__video-clip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+  &__social {
+    padding: 4rem;
+    margin-bottom: 4rem;
+    background: #f9f9f9;
+  }
+  &__social-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+.others-work {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+  }
+}
