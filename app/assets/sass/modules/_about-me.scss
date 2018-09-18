@@ -56,7 +56,7 @@
       transition: width 0.6s ease;
     }
   }
-  .progress-bar > span {
+  .progress-bar>span {
     color: $mine-shaft;
     font-size: 14px;
     height: 24px;
@@ -66,7 +66,7 @@
     top: -38px;
     width: auto;
   }
-  .progress-bar > span::before {
+  .progress-bar>span::before {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 10px solid #000;
@@ -98,10 +98,8 @@
   }
   &__item {
     position: relative;
-    .item-1 {
-    }
-    .item-2 {
-    }
+    .item-1 {}
+    .item-2 {}
   }
   &__image {
     position: relative;
@@ -118,25 +116,6 @@
       width: 100%;
       z-index: 22;
       background: rgba(0, 0, 0, 0.1);
-    }
-  }
-  &__heading {
-    h2 {
-      font-size: 3.2rem;
-      font-weight: 600;
-      line-height: 3.2rem;
-      margin-bottom: 2rem;
-    }
-    &--2 {
-      h2 {
-        font-size: 3rem;
-        font-weight: 400;
-        margin-bottom: 2.5rem;
-        text-transform: capitalize;
-        span {
-          font-weight: 700;
-        }
-      }
     }
   }
   &__grid {

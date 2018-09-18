@@ -143,6 +143,19 @@ ul {
       width: 57%;
       margin: auto; } }
 
+.heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  margin-bottom: 2rem; }
+  .heading--2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize; }
+    .heading--2 span {
+      font-weight: 700; }
+
 .center {
   text-align: center; }
 
@@ -161,6 +174,9 @@ ul {
     .p-b {
       padding-bottom: 15rem; } }
 
+.m-top-3 {
+  margin-top: 3rem; }
+
 .m-top-4 {
   margin-top: 4rem; }
   @media only screen and (max-width: 37.5em) {
@@ -169,6 +185,12 @@ ul {
 
 .m-bottom-2 {
   margin-bottom: 2rem; }
+
+.m-bottom-3 {
+  margin-bottom: 3rem; }
+
+.m-bottom-4 {
+  margin-bottom: 4rem; }
 
 .letter-big {
   color: #303030;
@@ -472,20 +494,6 @@ ul {
     z-index: 22;
     background: rgba(0, 0, 0, 0.1); }
 
-.expert__heading h2 {
-  font-size: 3.2rem;
-  font-weight: 600;
-  line-height: 3.2rem;
-  margin-bottom: 2rem; }
-
-.expert__heading--2 h2 {
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 2.5rem;
-  text-transform: capitalize; }
-  .expert__heading--2 h2 span {
-    font-weight: 700; }
-
 .expert__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -539,90 +547,99 @@ ul {
       grid-column: 2 / span 1; }
       .works__row .grid-item.app.sketch .portfolio {
         margin-top: 2.5rem; }
-  .works .portfolio {
-    position: relative;
-    margin-top: 3rem;
-    overflow: hidden; }
-    .works .portfolio img {
-      width: 100%; }
-    .works .portfolio:hover img {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
-    .works .portfolio:before {
-      background: rgba(0, 0, 0, 0.8);
-      position: absolute;
-      transition: all 0.5s ease-in;
-      content: "";
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      opacity: 0;
-      z-index: 16; }
-  .works .portfolio:hover:before,
-  .works .portfolio:hover .portfolio-hover,
-  .works .portfolio:hover .portfolio-action {
-    opacity: 1; }
-  .works .portfolio:hover img, .works .portfolio:before,
-  .works .portfolio-hover h3 a:before {
-    transition: all 0.3s ease-in-out; }
-  .works .portfolio:hover .portfolio-action {
-    margin-left: 0; }
-  .works .portfolio-hover {
-    margin-top: 2rem;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    transition: all 0.3s ease-in 0s;
-    width: 100%;
-    z-index: 18; }
-    .works .portfolio-hover h3 {
-      position: relative;
-      display: inline-block;
-      line-height: 2.4rem; }
-      .works .portfolio-hover h3 a:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 0;
-        height: 1px;
-        background: #eee;
-        display: block; }
-    .works .portfolio-hover h3 a {
-      color: #eeeeee;
-      display: inline-block;
-      font-size: 2.4rem;
-      font-weight: 600; }
-    .works .portfolio-hover p {
-      color: #eeeeee;
-      font-size: 1.6rem;
-      text-transform: capitalize;
-      padding-top: 2px; }
-  .works .portfolio:hover .portfolio-hover {
-    margin-top: 0; }
-  .works .portfolio-hover h3:hover a:before {
+
+.portfolio {
+  position: relative;
+  margin-top: 3rem;
+  overflow: hidden; }
+  .portfolio img {
     width: 100%; }
-  .works .portfolio-action {
-    bottom: 3rem;
-    left: 4rem;
-    margin-left: 3rem;
+  .portfolio:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  .portfolio:before {
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
+    transition: all 0.5s ease-in;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     opacity: 0;
-    z-index: 19;
-    transition: all 0.3s ease-in-out; }
-    .works .portfolio-action a {
-      color: #eeeeee;
-      font-size: 2.5rem;
-      margin-right: 2.8rem; }
-      .works .portfolio-action a:last-child {
-        margin-right: 0; }
-  .works .portfolio-action a:hover,
-  .works .portfolio-hover h3 a:hover {
-    color: #fff; }
+    z-index: 16; }
+
+.portfolio:hover:before,
+.portfolio:hover .portfolio-hover,
+.portfolio:hover .portfolio-action {
+  opacity: 1; }
+
+.portfolio:hover img, .portfolio:before,
+.portfolio-hover h3 a:before {
+  transition: all 0.3s ease-in-out; }
+
+.portfolio:hover .portfolio-action {
+  margin-left: 0; }
+
+.portfolio-hover {
+  margin-top: 2rem;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: all 0.3s ease-in 0s;
+  width: 100%;
+  z-index: 18; }
+  .portfolio-hover h3 {
+    position: relative;
+    display: inline-block;
+    line-height: 2.4rem; }
+    .portfolio-hover h3 a:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 0;
+      height: 1px;
+      background: #eee;
+      display: block; }
+  .portfolio-hover h3 a {
+    color: #eeeeee;
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 600; }
+  .portfolio-hover p {
+    color: #eeeeee;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding-top: 2px; }
+
+.portfolio:hover .portfolio-hover {
+  margin-top: 0; }
+
+.portfolio-hover h3:hover a:before {
+  width: 100%; }
+
+.portfolio-action {
+  bottom: 3rem;
+  left: 4rem;
+  margin-left: 3rem;
+  position: absolute;
+  opacity: 0;
+  z-index: 19;
+  transition: all 0.3s ease-in-out; }
+  .portfolio-action a {
+    color: #eeeeee;
+    font-size: 2.5rem;
+    margin-right: 2.8rem; }
+    .portfolio-action a:last-child {
+      margin-right: 0; }
+
+.portfolio-action a:hover,
+.portfolio-hover h3 a:hover {
+  color: #fff; }
 
 .testimonials {
   grid-column: full-start / full-end; }
@@ -1079,10 +1096,21 @@ ul {
   grid-template-columns: 77rem 1fr;
   grid-gap: 5rem; }
 
+.work-details .grid-item-8 img {
+  margin-bottom: 4rem; }
+
+.work-details .work-brief__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem; }
+
 .work-details__video-clip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem; }
+
+.work-details .pagination {
+  justify-content: space-between; }
 
 .work-details__social {
   padding: 4rem;

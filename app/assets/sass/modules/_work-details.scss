@@ -4,10 +4,25 @@
     grid-template-columns: 77rem 1fr;
     grid-gap: 5rem;
   }
+  .grid-item-8 {
+    img {
+      margin-bottom: 4rem;
+    }
+  }
+  .work-brief {
+    &__row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+    }
+  }
   &__video-clip {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
+  }
+  .pagination {
+    justify-content: space-between;
   }
   &__social {
     padding: 4rem;
