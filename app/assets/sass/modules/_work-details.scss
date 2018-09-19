@@ -15,6 +15,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 4rem;
     }
+    &__item {}
   }
   &__video-clip {
     display: grid;
@@ -23,16 +24,71 @@
   }
   .pagination {
     justify-content: space-between;
+    li a {
+      font-size: $font-size;
+      font-weight: 600;
+      color: $scopion;
+      .fa-long-arrow-left {
+        margin-right: 0.5rem;
+      }
+      .fa-long-arrow-right {
+        margin-left: 0.5rem;
+      }
+    }
   }
   &__social {
     padding: 4rem;
     margin-bottom: 4rem;
-    background: #f9f9f9;
+    background: $off-white;
   }
   &__social-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+  }
+  &__sidebar {
+    h4 {
+      font-size: 2.4rem;
+      border-bottom: 2px solid $mine-shaft;
+      padding-bottom: 0.5rem;
+      margin-bottom: 3rem;
+    }
+    .info {
+      background: $off-white;
+      padding: 4rem 0;
+      li {
+        display: flex;
+        justify-content: center;
+      }
+      li:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      ul li img {
+        display: inline-block;
+        width: auto;
+        margin-right: 1.5rem;
+      }
+      li a {
+        font-size: $font-size;
+        font-weight: 600;
+        color: $scopion;
+      }
+    }
+    .list:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    .list {
+      h6 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+      }
+      p {
+        font-size: $font-size;
+        text-transform: capitalize;
+      }
+    }
   }
 }
 
