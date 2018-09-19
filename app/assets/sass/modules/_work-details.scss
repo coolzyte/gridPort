@@ -3,24 +3,47 @@
     display: grid;
     grid-template-columns: 77rem 1fr;
     grid-gap: 5rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
   }
   .grid-item-8 {
     img {
       margin-bottom: 4rem;
+      width: 100%;
     }
   }
   .work-brief {
+    margin-bottom: 3rem;
     &__row {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 4rem;
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+      }
     }
-    &__item {}
+    &__item {
+    }
   }
   &__video-clip {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
+    @include respond(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
+    * {
+      @include respond(phone) {
+        margin-bottom: -2rem;
+      }
+    }
   }
   .pagination {
     justify-content: space-between;
@@ -45,8 +68,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+    @include respond(phone) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    img {
+      width: 100%;
+    }
   }
   &__sidebar {
+    @include respond(tab-port) {
+      margin-top: 4rem;
+    }
+    img {
+      width: 100%;
+    }
     h4 {
       font-size: 2.4rem;
       border-bottom: 2px solid $mine-shaft;
@@ -97,5 +132,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
+    @include respond(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
   }
 }

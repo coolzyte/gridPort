@@ -77,7 +77,8 @@
   grid-column: full-start / full-end;
 }
 
-.work-details {
+.work-details,
+.blog-details {
   grid-column: center-start / center-end;
 }
 
