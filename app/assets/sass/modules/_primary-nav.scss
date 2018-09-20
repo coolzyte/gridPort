@@ -4,11 +4,14 @@
       background: #1c1c1c;
       display: flex;
       flex-direction: column;
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 0;
       left: 0;
-      width: 50%;
-      height: auto;
+      width: 280px;
+      max-width: 70%;
+      height: 100%;
+      padding: 3.2rem 0;
+      box-sizing: border-box;
       transform: scaleX(0);
       transform-origin: 0 -100%;
       transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
