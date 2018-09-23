@@ -250,6 +250,9 @@ ul {
         padding: 0 1.6rem; } }
   .site-header__menu-content {
     flex-wrap: nowrap; }
+  .site-header__logo a {
+    color: #303030;
+    font-weight: 600; }
   .site-header__menu-icon {
     position: relative;
     width: 3rem;
@@ -337,13 +340,18 @@ ul {
       top: 40%;
       z-index: 2; } }
   .hero__text-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-weight: 900;
     line-height: 3.5rem;
     margin-bottom: 1rem; }
     @media only screen and (min-width: 575px) {
       .hero__text-content h1 {
-        font-size: 9rem;
-        font-weight: 900;
+        font-size: 5rem;
+        line-height: 5.5rem;
+        margin-bottom: 1.5rem; } }
+    @media only screen and (min-width: 800px) {
+      .hero__text-content h1 {
+        font-size: 8rem;
         line-height: 8.5rem;
         margin-bottom: 1.5rem; } }
   .hero__text-content h2 {
@@ -763,10 +771,6 @@ ul {
       background: transparent;
       color: #303030;
       border-color: #303030; }
-  @media only screen and (min-width: 575px) {
-    .btn {
-      font-size: 2rem;
-      padding: 1.1rem 3rem; } }
 
 @media only screen and (max-width: 56.25em) {
   .primary-nav__content {

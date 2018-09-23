@@ -13,6 +13,12 @@
   &__menu-content {
     flex-wrap: nowrap;
   }
+  &__logo {
+    a {
+      color: $mine-shaft;
+      font-weight: 600;
+    }
+  }
   &__menu-icon {
     position: relative;
     width: 3rem;
@@ -56,18 +62,17 @@
         transform-origin: center center;
         width: 100%;
       }
-    }
-    // &--close-x {
- //   &:before {
- //     transform: rotate(45deg) scaleX(1.25);
- //   }
- //   .site-header__menu-icon__middle {
- //     opacity: 1;
- //     transform: scaleX(1);
- //   }
- //   &:after {
- //     transform: rotate(-45deg) scaleX(1.25) translateY(1px);
- //   }
- // }
+    } // &--close-x {
+    //   &:before {
+    //     transform: rotate(45deg) scaleX(1.25);
+    //   }
+    //   .site-header__menu-icon__middle {
+    //     opacity: 1;
+    //     transform: scaleX(1);
+    //   }
+    //   &:after {
+    //     transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    //   }
+    // }
   }
 }
