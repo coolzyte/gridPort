@@ -97,3 +97,74 @@
     }
   }
 }
+
+.cd-headline {
+  // @include MQ(M) {
+  //   font-size: 4.4rem;
+  //   font-weight: 300;
+  // }
+  // @include MQ(L) {
+  //   font-size: 6rem;
+  // }
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  b {
+    font-family: $title-font;
+    font-weight: 300;
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0; // @include small {
+    //   top: -6px;
+    // }
+    // @include medium {
+    //   top: -6px;
+    // }
+    &.is-visible {
+      position: relative;
+      font-family: $title-font;
+    }
+  }
+  .no-js & b {
+    opacity: 0;
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+}
+
+/* -------------------------------- 
+
+xclip 
+
+-------------------------------- */
+
+.cd-headline.clip {
+  span {
+    display: inline-block; // padding: 0.2em 0;
+  }
+  .cd-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+    &::after {
+      /* line */
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%; // background-color: $color-1;
+    }
+  }
+  b {
+    opacity: 0;
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+}
