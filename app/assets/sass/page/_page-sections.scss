@@ -6,7 +6,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: url(../../assets/images/slider/breadcrumb.jpg) no-repeat center center / cover;
+  background: url(../../assets/images/slider/breadcrumb.jpg) no-repeat center
+    center / cover;
   &__content {
     position: relative;
     padding-top: 5rem;
@@ -83,5 +84,9 @@
 }
 
 .others-work {
+  grid-column: center-start / center-end;
+}
+
+.service-package {
   grid-column: center-start / center-end;
 }
