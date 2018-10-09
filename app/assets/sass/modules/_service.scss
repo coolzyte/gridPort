@@ -46,19 +46,19 @@
     &--back {
       transform: rotateY(180deg);
       &-1 {
-        background-image: linear-gradient(to right bottom, $gallery, $dove);
+        background-image: linear-gradient(to right bottom, $bunker, $bunker);
       }
     }
     &--back {
       transform: rotateY(180deg);
       &-2 {
-        background-image: linear-gradient( to right bottom, $gallery, $mine-shaft);
+        background-image: linear-gradient(to right bottom, $bunker, $bunker);
       }
     }
     &--back {
       transform: rotateY(180deg);
       &-3 {
-        background-image: linear-gradient( to right bottom, $gallery, $mine-shaft);
+        background-image: linear-gradient(to right bottom, $bunker, $bunker);
       }
     }
   }
@@ -77,13 +77,16 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     &--1 {
-      background-image: linear-gradient(to right bottom, $gallery, $dove), url(../img/nat-5.jpg);
+      background-image: linear-gradient(to right bottom, $cape, $dove),
+        url(../../assets/images/work/p1.jpg);
     }
     &--2 {
-      background-image: linear-gradient(to right bottom, $gallery, $mine-shaft), url(../img/nat-6.jpg);
+      background-image: linear-gradient(to right bottom, $cape, $mine-shaft),
+        url(../../assets/images/work/p3.jpg);
     }
     &--3 {
-      background-image: linear-gradient(to right bottom, $gallery, $mine-shaft), url(../img/nat-7.jpg);
+      background-image: linear-gradient(to right bottom, $cape, $mine-shaft),
+        url(../../assets/images/work/p2.jpg);
     }
   }
   &__heading {
@@ -102,13 +105,25 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     &--1 {
-      background-image: linear-gradient( to right bottom, rgba($gallery, 0.85), rgba($dove, 0.85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($gallery, 0.85),
+        rgba($bunker, 0.85)
+      );
     }
     &--2 {
-      background-image: linear-gradient( to right bottom, rgba($gallery, 0.85), rgba($mine-shaft, 0.85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($gallery, 0.85),
+        rgba($bunker, 0.85)
+      );
     }
     &--3 {
-      background-image: linear-gradient( to right bottom, rgba($gallery, 0.85), rgba($mine-shaft, 0.85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($gallery, 0.85),
+        rgba($bunker, 0.85)
+      );
     }
   }
   &__details {
@@ -142,14 +157,16 @@
   &__price-only {
     font-size: 1.5rem;
     text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #fff;
   }
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+    color: #fff;
   } // MEDIA QUERY BEGINS
   // @include respond(tab-port) {
-  @media only screen and (max-width: 56.25em),
-  only screen and (hover: none) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 0.3rem;
     background-color: #fff;

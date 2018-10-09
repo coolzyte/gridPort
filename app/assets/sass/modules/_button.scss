@@ -29,4 +29,19 @@
       border-color: $mine-shaft;
     }
   }
+  &--card {
+    color: $gallery;
+    background: transparent;
+    border: 1px solid $gallery;
+    font-family: $title-font;
+    font-size: 1.2rem !important;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    padding: 0.8rem 2.5rem 0.7rem;
+    &:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
 }
