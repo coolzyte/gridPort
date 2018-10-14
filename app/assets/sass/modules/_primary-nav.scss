@@ -23,13 +23,7 @@
       display: flex;
       white-space: nowrap;
       padding-right: 5rem;
-      transform: scaleX(0);
-      transform-origin: 100% 0;
       transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
-      visibility: 0;
-      &--is-visible {
-        transform: scaleX(1);
-      }
     }
   }
   li {

@@ -20,6 +20,9 @@
     }
   }
   &__menu-icon {
+    @include medium {
+      display: none;
+    }
     position: relative;
     width: 3rem;
     vertical-align: middle;

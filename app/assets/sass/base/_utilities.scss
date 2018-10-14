@@ -10,6 +10,22 @@
   }
 }
 
+.item-grid-2 {
+  @include medium {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+}
+
+.item-grid-3 {
+  @include medium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+  }
+}
+
 .flex-item {
   display: flex;
   flex-wrap: wrap;

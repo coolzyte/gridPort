@@ -1,12 +1,6 @@
 /* Exper Section */
 
 .grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem;
-  @include respond(phone) {
-    grid-template-columns: 1fr;
-  }
   &__item {
     margin-top: 3rem;
     span {
@@ -77,16 +71,13 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     &--1 {
-      background-image: linear-gradient(to right bottom, $cape, $dove),
-        url(../../assets/images/work/p1.jpg);
+      background-image: linear-gradient(to right bottom, $cape, $dove), url(../../assets/images/work/p1.jpg);
     }
     &--2 {
-      background-image: linear-gradient(to right bottom, $cape, $mine-shaft),
-        url(../../assets/images/work/p3.jpg);
+      background-image: linear-gradient(to right bottom, $cape, $mine-shaft), url(../../assets/images/work/p3.jpg);
     }
     &--3 {
-      background-image: linear-gradient(to right bottom, $cape, $mine-shaft),
-        url(../../assets/images/work/p2.jpg);
+      background-image: linear-gradient(to right bottom, $cape, $mine-shaft), url(../../assets/images/work/p2.jpg);
     }
   }
   &__heading {
@@ -105,25 +96,13 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($gallery, 0.85),
-        rgba($bunker, 0.85)
-      );
+      background-image: linear-gradient( to right bottom, rgba($gallery, 0.85), rgba($bunker, 0.85));
     }
     &--2 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($gallery, 0.85),
-        rgba($bunker, 0.85)
-      );
+      background-image: linear-gradient( to right bottom, rgba($gallery, 0.85), rgba($bunker, 0.85));
     }
     &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($gallery, 0.85),
-        rgba($bunker, 0.85)
-      );
+      background-image: linear-gradient( to right bottom, rgba($gallery, 0.85), rgba($bunker, 0.85));
     }
   }
   &__details {
@@ -166,7 +145,8 @@
     color: #fff;
   } // MEDIA QUERY BEGINS
   // @include respond(tab-port) {
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) {
     height: auto;
     border-radius: 0.3rem;
     background-color: #fff;

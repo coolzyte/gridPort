@@ -3,6 +3,8 @@
   position: relative;
   height: 80vh;
   width: 100%;
+  display: flex;
+  align-items: center;
   @include large {
     height: 100vh;
   }
@@ -23,8 +25,7 @@
     @include respond(tab-port) {
       display: none;
     }
-    position: absolute;
-    bottom: 0;
+    position: absolute; // bottom: 0;
     left: 25%;
     z-index: 1;
     img {
@@ -39,11 +40,10 @@
     }
   }
   &__text-content {
-    @include medium {
-      position: absolute;
-      top: 40%;
-      z-index: 2;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1 {
       font-size: 3rem;
       font-weight: 900;
@@ -96,16 +96,6 @@
       }
     }
   }
-}
-
-.cd-headline {
-  // @include MQ(M) {
-  //   font-size: 4.4rem;
-  //   font-weight: 300;
-  // }
-  // @include MQ(L) {
-  //   font-size: 6rem;
-  // }
 }
 
 .cd-words-wrapper {

@@ -32,7 +32,7 @@
           <nav class="primary-nav">
             <ul class="primary-nav__content">
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="work.html">Portfolio</a> </li>
               <li><a href="blog.html">Blog</a> </li>
               <li><a href="services.html">Service</a> </li>
@@ -50,6 +50,7 @@
   <!--Start Hero-->
   <div class="hero">
     <div class="wrapper">
+
       <div class="hero__text-content">
         <h5>HAY! THERE</h5>
         <h1>I AM smith</h1>
@@ -64,9 +65,10 @@
         </h2>
         <a href="#" class="btn">hire me</a>
       </div>
-      <div class="hero__pic hero__pic--right">
-        <img src="assets/images/slider/man2.png" alt="" class="image" alt="pic">
-      </div>
+      <!-- <div class="hero__pic hero__pic--right">
+          <img src="assets/images/slider/man2.png" alt="" class="image" alt="pic">
+        </div> -->
+
     </div>
     <ul class="social-menu social-menu--mod flex-item">
       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -86,7 +88,7 @@
           dolores
           eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est</p>
       </div>
-      <div class="about-me__content">
+      <div class="about-me__content item-grid-2">
         <div class="about-me__text">
           <p class="m-bottom-2"><span class="letter-big">S</span>abuj must explain to you how all this mistaken idea of
             denouncing
@@ -137,7 +139,7 @@
       </div>
       <!-- Section Title End -->
       <div class="masonry">
-        <div class="works__menu">
+        <div class="portfolio-menu">
           <button class="active" data-filter="*">all</button>
           <button data-filter=".ui">ui&amp;ux</button>
           <button data-filter=".web">web design</button>
@@ -145,9 +147,8 @@
           <button data-filter=".sketch">sketch design</button>
         </div>
         <!-- End of portfolio-menu -->
-        <div class="works__row grid">
-
-          <div class="grid-item ui">
+        <div class="works__row item-grid-2">
+          <div class="grid-item app">
             <div class="portfolio">
               <img src="assets/images/work/p2.jpg" alt="portfolio-image">
               <div class="portfolio-hover">
@@ -174,7 +175,7 @@
             </div>
           </div>
 
-          <div class="grid-item app sketch">
+          <div class="grid-item ui">
             <div class="portfolio">
               <img src="assets/images/work/p5.jpg" alt="portfolio-image">
               <div class="portfolio-hover">
@@ -189,7 +190,7 @@
           </div>
 
 
-          <div class="grid-item ui">
+          <div class="grid-item web sketch">
             <div class="portfolio">
               <img src="assets/images/work/p2.jpg" alt="portfolio-image">
               <div class="portfolio-hover">
@@ -202,7 +203,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-item brand ui">
+          <div class="grid-item app sketch">
             <div class="portfolio">
               <img src="assets/images/work/p4.jpg" alt="portfolio-image">
               <div class="portfolio-hover">
@@ -251,7 +252,7 @@
               was born and I will give you a complete account of the monen vai kemon asen</p>
           </div>
           <div class="swiper-slide center">
-            <div class="testimonials__image"><img src="assets/images/testimonial/t1.png" alt=""></div>
+            <div class="testimonials__image"><img src="assets/images/testimonial/t2.png" alt=""></div>
             <h3 class="title">Jena John</h3>
             <span class="subtitle">Developer Coolzyte</span>
             <p class="text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
@@ -314,9 +315,8 @@
 
   </div>
   <!--container End-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 
   <!-- build:js assets/scripts/App.js -->
   <script src="/temp/scripts/App.js"></script>
@@ -440,6 +440,7 @@
         $oldWord.removeClass('is-visible').addClass('is-hidden');
         $newWord.removeClass('is-hidden').addClass('is-visible');
       }
+
     });
 
 
@@ -452,6 +453,7 @@
         disableOnInteraction: false
       }
     });
+
   </script>
 </body>
 
