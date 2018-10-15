@@ -2,6 +2,12 @@
   &__area {
     background: $off-white;
   }
+  &__container {
+    display: grid;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
   #map {
     height: 73rem;
     @include respond(tab-port) {

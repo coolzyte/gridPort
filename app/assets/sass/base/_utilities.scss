@@ -11,11 +11,15 @@
 }
 
 .item-grid-2 {
-  @include medium {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  @include respond(tab-port) {
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+  grid-gap: 4rem;
 }
 
 .item-grid-3 {

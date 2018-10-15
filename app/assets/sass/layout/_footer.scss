@@ -27,6 +27,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
       padding: 0 1.6rem;
     }
     @include respond(phone) {
